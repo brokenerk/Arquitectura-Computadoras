@@ -1,4 +1,4 @@
-//gcc bubbleSort.c -S -o bubble.out
+//gcc t26.c -S
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -10,7 +10,7 @@
 int* generarArreglo() {
 	int *A = (int*)calloc(n, sizeof(int));
 	for(int i = 0; i < n; i++)
-		A[i] = rand();
+		A[i] = rand() % 10000;
 	return A;
 }
 

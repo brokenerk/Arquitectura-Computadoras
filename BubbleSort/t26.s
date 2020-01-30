@@ -1,4 +1,4 @@
-	.file	"bubbleSort.c"
+	.file	"t26.c"
 	.text
 	.globl	generarArreglo
 	.type	generarArreglo, @function
@@ -10,31 +10,39 @@ generarArreglo:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	pushq	%rbx
-	subq	$24, %rsp
-	.cfi_offset 3, -24
+	subq	$16, %rsp
 	movl	$4, %esi
 	movl	$50, %edi
 	call	calloc@PLT
-	movq	%rax, -24(%rbp)
-	movl	$0, -28(%rbp)
+	movq	%rax, -8(%rbp)
+	movl	$0, -12(%rbp)
 	jmp	.L2
 .L3:
-	movl	-28(%rbp), %eax
+	call	rand@PLT
+	movl	%eax, %ecx
+	movl	-12(%rbp), %eax
 	cltq
 	leaq	0(,%rax,4), %rdx
-	movq	-24(%rbp), %rax
-	leaq	(%rdx,%rax), %rbx
-	call	rand@PLT
-	movl	%eax, (%rbx)
-	addl	$1, -28(%rbp)
+	movq	-8(%rbp), %rax
+	leaq	(%rdx,%rax), %rsi
+	movl	$1759218605, %edx
+	movl	%ecx, %eax
+	imull	%edx
+	sarl	$12, %edx
+	movl	%ecx, %eax
+	sarl	$31, %eax
+	subl	%eax, %edx
+	movl	%edx, %eax
+	imull	$10000, %eax, %eax
+	subl	%eax, %ecx
+	movl	%ecx, %eax
+	movl	%eax, (%rsi)
+	addl	$1, -12(%rbp)
 .L2:
-	cmpl	$49, -28(%rbp)
+	cmpl	$49, -12(%rbp)
 	jle	.L3
-	movq	-24(%rbp), %rax
-	addq	$24, %rsp
-	popq	%rbx
-	popq	%rbp
+	movq	-8(%rbp), %rax
+	leave
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
