@@ -1,16 +1,16 @@
 li	r0, #40
 li	r1, #0
+li	r2, #1
+li	r4, #1
 
-li	r2, #0
-li	r3, #1
-
-ciclo:
-	add		r4, r2, r3
-	addi	r2, r3, #0
-	subi	r3, r4, #0
-	addi	r1, r1, #1
-	bgti	r1, r0, ciclo
-
+eti1:
+	add		r3, r2, r1
+	addi	r1, r2, #0
+	subi	r2, r3, #0
+	addi	r4, r4, #1
+	swi 	r3, 0x200
+	bnei	r4, r0, eti1
+	
 fin:
 	nop
 	b 		fin

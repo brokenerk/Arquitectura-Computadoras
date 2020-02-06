@@ -1,7 +1,7 @@
-li	r1, #0x04
-li	r2, #0x06
+li	r0, #1
+li	r1, #11
 
-ciclo:
-	add		r2, r2, r1
-	swi		r2, 0x72
-	b		ciclo
+suma:
+	add		r0, r1, r0
+	swi		r1, 0x72
+	b		suma
