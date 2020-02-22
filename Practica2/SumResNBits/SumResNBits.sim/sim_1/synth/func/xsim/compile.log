@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits/SumResNBits.sim/sim_1/synth/func/xsim/test_bench_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sum_resNbits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits/SumResNBits.srcs/sim_1/new/test_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_bench'
