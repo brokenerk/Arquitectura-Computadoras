@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb 22 15:47:21 2020
+# Process ID: 9312
+# Current directory: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4472 C:\Users\YaKerTaker\Google Drive\8vo\Arquitectura-Computadoras\Practica2\SumResNBits\SumResNBits.xpr
+# Log file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits/vivado.log
+# Journal file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits/SumResNBits.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+open_wave_config {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits/test_bench_func_synth.wcfg}
+source test_bench.tcl
+save_wave_config {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica2/SumResNBits/test_bench_func_synth.wcfg}
+close_sim
+close_project
+open_project {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica3/SumAcarrAnt/SumAcarrAnt.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+close_design
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+launch_simulation -mode post-synthesis -type functional
+source test_bench.tcl
+save_wave_config {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica3/SumAcarrAnt/test_bench_func_synth.wcfg}
+close_sim
