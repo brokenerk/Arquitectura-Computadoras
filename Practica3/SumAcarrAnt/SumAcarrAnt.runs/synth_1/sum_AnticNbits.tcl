@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,6 +38,9 @@ read_vhdl -library xil_defaultlib {{C:/Users/YaKerTaker/Google Drive/8vo/Arquite
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica3/SumAcarrAnt/SumAcarrAnt.srcs/constrs_1/new/pines.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica3/SumAcarrAnt/SumAcarrAnt.srcs/constrs_1/new/pines.xdc}}]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

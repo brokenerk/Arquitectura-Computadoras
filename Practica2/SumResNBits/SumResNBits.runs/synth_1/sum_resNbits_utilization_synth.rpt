@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Feb 20 20:53:22 2020
+| Date         : Thu Feb 27 19:26:46 2020
 | Host         : OUTERHEAVEN running 64-bit major release  (build 9200)
 | Command      : report_utilization -file sum_resNbits_utilization_synth.rpt -pb sum_resNbits_utilization_synth.pb
 | Design       : sum_resNbits
