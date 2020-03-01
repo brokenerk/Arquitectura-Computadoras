@@ -35,7 +35,7 @@ begin
     end generate;
     res <= res_aux;
     
-    process(res_aux, c) 
+    process(res_aux, c, aluop) 
         variable z: STD_LOGIC;
     begin
         case aluop(1 downto 0) is

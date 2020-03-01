@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Feb 28 20:09:32 2020">
+<application name="pa" timeStamp="Sat Feb 29 18:20:27 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a42796b8e78348ac88645c19bf9eef16" type="ProjectID"/>
-<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+<property name="ProjectIteration" value="7" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,20 +17,29 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="4" type="JavaHandler"/>
+<property name="AddSources" value="5" type="JavaHandler"/>
 <property name="EditProperties" value="1" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="RunSchematic" value="1" type="JavaHandler"/>
-<property name="RunSynthesis" value="3" type="JavaHandler"/>
-<property name="SimulationRun" value="9" type="JavaHandler"/>
-<property name="WaveformSaveConfiguration" value="9" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="2" type="JavaHandler"/>
+<property name="RunBitgen" value="2" type="JavaHandler"/>
+<property name="RunImplementation" value="4" type="JavaHandler"/>
+<property name="RunSchematic" value="12" type="JavaHandler"/>
+<property name="RunSynthesis" value="6" type="JavaHandler"/>
+<property name="SaveDesign" value="1" type="JavaHandler"/>
+<property name="ShowView" value="2" type="JavaHandler"/>
+<property name="SimulationRun" value="11" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="1" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="11" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AbstractCombinedPanel_MOVE_SELECTED_ELEMENT_UP" value="1" type="GuiHandlerData"/>
 <property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="4" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="8" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="1" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="26" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="3" type="GuiHandlerData"/>
+<property name="ConstraintsChooserPanel_CREATE_FILE" value="1" type="GuiHandlerData"/>
+<property name="CreateConstraintsFilePanel_FILE_NAME" value="1" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="4" type="GuiHandlerData"/>
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="61" type="GuiHandlerData"/>
 <property name="DefineModulesDialog_ENTITY_NAME" value="1" type="GuiHandlerData"/>
@@ -38,40 +47,55 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_FPGA_TABLE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_PACKAGE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="55" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="69" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="22" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="49" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
-<property name="GraphicalView_ZOOM_IN" value="17" type="GuiHandlerData"/>
-<property name="GraphicalView_ZOOM_OUT" value="58" type="GuiHandlerData"/>
+<property name="GraphicalView_ZOOM_IN" value="25" type="GuiHandlerData"/>
+<property name="GraphicalView_ZOOM_OUT" value="74" type="GuiHandlerData"/>
 <property name="HJFileChooserRecentListPreview_RECENT_DIRECTORIES" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_ADD_SOURCES" value="4" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="7" type="GuiHandlerData"/>
+<property name="MainMenuMgr_WINDOW" value="4" type="GuiHandlerData"/>
+<property name="MainWinMenuMgr_LAYOUT" value="2" type="GuiHandlerData"/>
+<property name="MainWinMenuMgr_LOAD" value="1" type="GuiHandlerData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="5" type="GuiHandlerData"/>
+<property name="NetlistSchMenuAndMouse_EXPAND_COLLAPSE" value="5" type="GuiHandlerData"/>
+<property name="NetlistSchMenuAndMouse_VIEW" value="12" type="GuiHandlerData"/>
+<property name="PACommandNames_ADD_SOURCES" value="5" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_UPDATE_HIER" value="9" type="GuiHandlerData"/>
+<property name="PACommandNames_DESIGN_RUNS_WINDOW" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_OPEN_HARDWARE_MANAGER" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SAVE_DESIGN" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="9" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="3" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="8" type="GuiHandlerData"/>
-<property name="PAViews_SCHEMATIC" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="11" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="6" type="GuiHandlerData"/>
+<property name="PAViews_DEVICE" value="1" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="13" type="GuiHandlerData"/>
+<property name="PAViews_SCHEMATIC" value="10" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiHandlerData"/>
-<property name="ProjectTab_RELOAD" value="1" type="GuiHandlerData"/>
+<property name="ProjectTab_RELOAD" value="4" type="GuiHandlerData"/>
 <property name="RDICommands_PROPERTIES" value="1" type="GuiHandlerData"/>
-<property name="RDICommands_SAVE_FILE" value="5" type="GuiHandlerData"/>
-<property name="RDICommands_WAVEFORM_SAVE_CONFIGURATION" value="8" type="GuiHandlerData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="50" type="GuiHandlerData"/>
+<property name="RDICommands_SAVE_FILE" value="6" type="GuiHandlerData"/>
+<property name="RDICommands_WAVEFORM_SAVE_CONFIGURATION" value="10" type="GuiHandlerData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="66" type="GuiHandlerData"/>
 <property name="SaveProjectUtils_SAVE" value="1" type="GuiHandlerData"/>
+<property name="SaveSchematicDialog_SPECIFY_OUTPUT_PDF_FILE" value="9" type="GuiHandlerData"/>
+<property name="SchMenuAndMouse_EXPAND_CONE" value="3" type="GuiHandlerData"/>
+<property name="SchMenuAndMouse_SAVE_AS_PDF_FILE" value="12" type="GuiHandlerData"/>
+<property name="SchematicView_REGENERATE" value="2" type="GuiHandlerData"/>
+<property name="SignalTreePanel_SIGNAL_TREE_TABLE" value="16" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_CREATE_FILE" value="4" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_SCAN_AND_ADD_RTL_INCLUDE_FILES_INTO" value="1" type="GuiHandlerData"/>
 <property name="SrcChooserTable_SRC_CHOOSER_TABLE" value="8" type="GuiHandlerData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="8" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="2" type="GuiHandlerData"/>
+<property name="SrcMenu_IP_HIERARCHY" value="11" type="GuiHandlerData"/>
+<property name="SrcMenu_OPEN_SELECTED_SOURCE_FILES" value="1" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="3" type="GuiHandlerData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="3" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="17" type="GuiMode"/>
+<property name="GuiMode" value="19" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="14" type="TclMode"/>
+<property name="TclMode" value="16" type="TclMode"/>
 </item>
 </section>
 </application>
