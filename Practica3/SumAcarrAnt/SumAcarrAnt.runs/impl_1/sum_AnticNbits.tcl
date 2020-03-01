@@ -60,15 +60,12 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 1
-  set_param synth.incrementalSynthesisCache C:/Users/YaKerTaker/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6352-OUTERHEAVEN/incrSyn
   open_checkpoint sum_AnticNbits_routed.dcp
   set_property webtalk.parent_dir {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica3/SumAcarrAnt/SumAcarrAnt.cache/wt} [current_project]
   catch { write_mem_info -force sum_AnticNbits.mmi }
