@@ -7,87 +7,71 @@ using namespace std;
 
 class ArchivoRegistros {
 	private:
-		int write_data;
-		int write_reg;
-		int read_reg1;
-		int read_reg2;
-		int write_lit;
 		int read_data1;
 		int read_data2;
-		int arreglo[16];
-		
+		int banco[16];
 	public:
 		ArchivoRegistros();
 		void set();
 		void get();
-		void operacionSincrona(int writeData, int writeReg, int readReg1, int shamt, int clr, int wr, int she, int dir);
+		void operacionSincrona(int write_data, int write_reg, int read_reg1, int shamt, int clr, int wr, int she, int dir);
 		void operacionAsincrona(int clr);
-		void operacionAsincrona(int clr, int readReg1, int readReg2);
+		void operacionAsincrona(int clr, int read_reg1, int read_reg2);
 };
 
 ArchivoRegistros::ArchivoRegistros() { }
 
 void ArchivoRegistros::set() {
 	for(int i = 0; i < 16; i++) {
-		arreglo[i] = rand() % 65536;
+		banco[i] = rand() % 65535;
 	}
 }
 
 void ArchivoRegistros::get() {
     for (int i = 0; i < 16; i++) {
-    	cout << bitset<16>(arreglo[i]) << endl;
+    	cout << bitset<16>(banco[i]) << endl;
     }
 }
 
 // Reset, Banco[0,1, ... , 15] = 0
 void ArchivoRegistros::operacionAsincrona(int clr) {
 	if (clr == 1) {
-		fill(arreglo, arreglo + 16, 0);
+		fill(banco, banco + 16, 0);
 	}
 }
 
-// readData1 = Banco[readReg1]	
-// readData2 = Banco[readReg2]
-void ArchivoRegistros::operacionAsincrona(int clr, int readReg1, int readReg2) {
+// readData1 = Banco[read_reg1]	
+// readData2 = Banco[read_reg2]
+void ArchivoRegistros::operacionAsincrona(int clr, int read_reg1, int read_reg2) {
 	cout << "Read_Data1: ";
-	read_reg1 = readReg1;
-	read_data1 = arreglo[read_reg1];
-    cout << bitset<16>(read_data1) << endl;
+	read_data1 = banco[read_reg1];
+	cout << bitset<16>(read_data1) << endl;
 
-    cout << "Read_Data2: ";
-    read_reg2 = readReg2;
-	read_data2 = arreglo[read_reg2];
-    cout << bitset<16>(read_data2) << endl;;
+	cout << "Read_Data2: ";
+	read_data2 = banco[read_reg2];
+	cout << bitset<16>(read_data2) << endl;
 }
 
-void ArchivoRegistros::operacionSincrona(int writeData, int writeReg, int readReg1, int shamt, int clr, int wr, int she, int dir) {
+void ArchivoRegistros::operacionSincrona(int write_data, int write_reg, int read_reg1, int shamt, int clr, int wr, int she, int dir) {
 	if (clr == 1) {
 		// Reset, Banco[0,1, ... , 15] = 0
 		operacionAsincrona(clr); 
 	}
 	else if (clr == 0 && wr == 0 && she == 0 && dir == 0) {
 		// Banco = Banco
-		memcpy(arreglo, arreglo, 16); 
+		memcpy(banco, banco, 16); 
 	}
 	else if (clr == 0 && wr == 1 && she == 0) {
-		// Banco[writeReg] = writeData
-		write_data = writeData;
-		write_reg = writeReg;
-		arreglo[write_reg] = write_data; 
+		// Banco[write_reg] = write_data
+		banco[write_reg] = write_data; 
 	}
 	else if (clr == 0 && wr == 1 && she == 1 && dir == 0) {
-		// Banco[writeReg] = Banco[readReg1] >> shamt
-		write_reg = writeReg;
-		read_reg1 = readReg1;
-		write_lit = shamt;
-		arreglo[write_reg] = arreglo[read_reg1] >> write_lit; 
+		// Banco[write_reg] = Banco[read_reg1] >> shamt
+		banco[write_reg] = banco[read_reg1] >> shamt; 
 	}
 	else if (clr == 0 && wr == 1 && she == 1 && dir == 1) {
-		// Banco[writeReg] = Banco[readReg1] << shamt
-		write_reg = writeReg;
-		read_reg1 = readReg1;
-		write_lit = shamt;
-		arreglo[write_reg] = arreglo[read_reg1] << write_lit; 
+		// Banco[write_reg] = Banco[read_reg1] << shamt
+		banco[write_reg] = banco[read_reg1] << shamt; 
 	}
 	else {
 		cout << "Combinacion de parametros incorrecta" << endl;
@@ -154,7 +138,7 @@ int main() {
 	cout << "\n13. Reset" << endl;
 	ar.operacionAsincrona(1); // Reset
 	ar.get();
+	
 	cout << endl;
-
 	return 0; 
 }
