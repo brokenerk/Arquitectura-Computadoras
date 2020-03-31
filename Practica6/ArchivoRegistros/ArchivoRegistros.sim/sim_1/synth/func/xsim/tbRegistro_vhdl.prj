@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tbRegistro_func_synth.vhd" \
+"../../../../../ArchivoRegistros.srcs/sources_1/new/Registro.vhd" \
+"../../../../../ArchivoRegistros.srcs/sim_1/new/tbRegistro.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+ERROR: File Estimulos.txt is not open. Cannot call endfile on it
+Time: 100 ns  Iteration: 0  Process: /test_bench/line__47
+  File: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica6/ArchivoRegistros/ArchivoRegistros.srcs/sim_1/new/test_bench.vhd
+
+HDL Line: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica6/ArchivoRegistros/ArchivoRegistros.srcs/sim_1/new/test_bench.vhd:94

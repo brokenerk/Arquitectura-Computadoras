@@ -1,0 +1,15 @@
+--- P8.- MEMORIA DE PROGRAMA --
+
+65536 x 25
+m x n
+m: numero de palabras = 2^16 B -> PC = lit16
+n: tamaño de la palabra = 25 tam de la instruccion
+
+-- Entrada
+PC(16) 
+
+-- Salida
+Inst(25) 
+
+Tabla de control
+Inst = MemProg[PC] -- Lectura

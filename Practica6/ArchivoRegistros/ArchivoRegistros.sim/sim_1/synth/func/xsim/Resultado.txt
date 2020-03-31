@@ -1,0 +1,1 @@
+  WREG    WD   RR1   RD1   RR2   RD2 SHAMT   CLR    WR   SHE   DIR

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tbBarrelShifter_func_synth.vhd" \
+"../../../../../ArchivoRegistros.srcs/sources_1/new/BarrelShifter.vhd" \
+"../../../../../ArchivoRegistros.srcs/sim_1/new/tbBarrelShifter.vhd" \
+
+# Do not sort compile order
+nosort
