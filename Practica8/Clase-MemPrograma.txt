@@ -1,9 +1,14 @@
 --- P8.- MEMORIA DE PROGRAMA --
-
+m = 2^10
+3200 bytes
 65536 x 25
 m x n
 m: numero de palabras = 2^16 B -> PC = lit16
 n: tamaño de la palabra = 25 tam de la instruccion
+No leer archivos txt, solo simulacion
+Escribir resultados en txts
+Usar constantes en la simulacion
+ROM
 
 -- Entrada
 PC(16) 

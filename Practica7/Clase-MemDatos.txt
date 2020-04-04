@@ -1,5 +1,6 @@
 --- P7.- MEMORIA DE DATOS --
-
+m = 2^11
+4096 bytes
 65536 x 16
 m x n
 m: numero de palabras = 2^16 LWI -> Rd = Mem[lit16]
@@ -17,6 +18,9 @@ dataOut (16)
 La suma la hace la ALU
 Escritura sincrona
 Lectura asincrona
+Lectura archivos txt
+Escribir resultados en txts
+RAM
 
 1.- La organizacion
 2.- Buses de entrada y salida
