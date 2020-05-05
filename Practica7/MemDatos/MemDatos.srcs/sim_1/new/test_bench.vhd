@@ -30,9 +30,9 @@ begin
     );
     
     reloj : process begin
-        clk <= '1';
-        wait for 5 ns;
         clk <= '0';
+        wait for 5 ns;
+        clk <= '1';
         wait for 5 ns;
     end process;
     
@@ -48,6 +48,7 @@ begin
         variable var_data_in : STD_LOGIC_VECTOR (15 downto 0);
         variable cadena : string (1 to 7);
     begin
+
         --- ADD  WD  DATAIN
         file_open(arch_en, "C:\Users\YaKerTaker\Google Drive\8vo\Arquitectura-Computadoras\Practica7\MemDatos\MemDatos.srcs\sim_1\new\Estimulos.txt", READ_MODE);
     

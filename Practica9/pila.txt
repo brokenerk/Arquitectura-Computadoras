@@ -1,0 +1,37 @@
+PILA
+Stack Pointer = SP
+8 x 16
+
+Entradas:
+PCin 16 bits
+WPC
+UP
+DW
+CLR
+CLK
+
+Salidas:
+PCout 16 bits
+
+Saltos condicionales e incondicionales
+Llamada subrutinas
+Retorno
+
+CLR	CLK	WPC	UP	DW	Operacion
+1	x	x 	x 	x 	SP = 0
+					PILA(0,1,...,7) = 0
+
+0	1	0	0	0	SP = SP
+					PILA(SP)++
+
+0	1	1	0	0	SP = SP
+					PILA(SP) = PCin
+
+0	1	1	1	0	SP++
+					PILA(SP) = PCin
+
+0	1	0	0	1	SP--
+					PILA(SP)++
+
+x 	x	x	x	x	PCout = PILA(SP)
+

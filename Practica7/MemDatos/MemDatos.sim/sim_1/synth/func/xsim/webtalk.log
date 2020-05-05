@@ -2,13 +2,13 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Apr  3 20:29:33 2020
-# Process ID: 9372
+# Start of session at: Sun Apr  5 17:22:54 2020
+# Process ID: 6968
 # Current directory: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica7/MemDatos/MemDatos.sim/sim_1/synth/func/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica7/MemDatos/MemDatos.sim/sim_1/synth/func/xsim/xsim.dir/tbArreglo_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica7/MemDatos/MemDatos.sim/sim_1/synth/func/xsim/xsim.dir/test_bench_func_synth/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica7/MemDatos/MemDatos.sim/sim_1/synth/func/xsim/webtalk.log
 # Journal file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica7/MemDatos/MemDatos.sim/sim_1/synth/func/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/YaKerTaker/Google -notrace
 couldn't read file "C:/Users/YaKerTaker/Google": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Fri Apr  3 20:29:33 2020...
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr  5 17:22:54 2020...
