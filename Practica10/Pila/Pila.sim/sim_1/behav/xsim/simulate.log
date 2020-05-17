@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: File C:\Users\YaKerTaker\Google Drive\8vo\Arquitectura-Computadoras\Practica10\Pila\Pila.srcs\sim_1\new\Estimulos.txt is already at the end of file, nothing to read
+Time: 235 ns  Iteration: 1  Process: /test_bench/line__42  File: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.srcs/sim_1/new/test_bench.vhd
+Error: STD_LOGIC_1164.HREAD End of string encountered
+Time: 235 ns  Iteration: 1  Process: /test_bench/line__42  File: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.srcs/sim_1/new/test_bench.vhd
+Error: STD_LOGIC_1164.READ(STD_ULOGIC) End of string encountered
+Time: 235 ns  Iteration: 1  Process: /test_bench/line__42  File: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.srcs/sim_1/new/test_bench.vhd
+Error: STD_LOGIC_1164.READ(STD_ULOGIC) End of string encountered
+Time: 235 ns  Iteration: 1  Process: /test_bench/line__42  File: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.srcs/sim_1/new/test_bench.vhd
+Error: STD_LOGIC_1164.READ(STD_ULOGIC) End of string encountered
+Time: 235 ns  Iteration: 1  Process: /test_bench/line__42  File: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.srcs/sim_1/new/test_bench.vhd
+Error: STD_LOGIC_1164.READ(STD_ULOGIC) End of string encountered
+Time: 235 ns  Iteration: 1  Process: /test_bench/line__42  File: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.srcs/sim_1/new/test_bench.vhd

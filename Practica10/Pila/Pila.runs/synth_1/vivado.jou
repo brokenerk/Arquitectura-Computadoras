@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May 16 18:33:22 2020
+# Process ID: 11892
+# Current directory: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.runs/synth_1
+# Command line: vivado.exe -log Pila.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pila.tcl
+# Log file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.runs/synth_1/Pila.vds
+# Journal file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Pila.tcl -notrace

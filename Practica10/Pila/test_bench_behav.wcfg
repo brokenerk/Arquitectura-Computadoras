@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_bench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="test_bench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999998750fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000251fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/test_bench/PCin" type="array">
+      <obj_property name="ElementShortName">PCin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/wpc" type="logic">
+      <obj_property name="ElementShortName">wpc</obj_property>
+      <obj_property name="ObjectShortName">wpc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/up" type="logic">
+      <obj_property name="ElementShortName">up</obj_property>
+      <obj_property name="ObjectShortName">up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/dw" type="logic">
+      <obj_property name="ElementShortName">dw</obj_property>
+      <obj_property name="ObjectShortName">dw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/PCout" type="array">
+      <obj_property name="ElementShortName">PCout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/SPout" type="array">
+      <obj_property name="ElementShortName">SPout[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SPout[2:0]</obj_property>
+   </wvobject>
+</wave_config>

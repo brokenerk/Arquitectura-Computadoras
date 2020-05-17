@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May 11 21:45:31 2020
+# Process ID: 11208
+# Current directory: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11116 C:\Users\YaKerTaker\Google Drive\8vo\Arquitectura-Computadoras\Practica10\Pila\Pila.xpr
+# Log file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/vivado.log
+# Journal file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/Pila.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+save_wave_config {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/test_bench_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/test_bench_behav.wcfg}}
+set_property xsim.view {{C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica10/Pila/test_bench_behav.wcfg}} [get_filesets sim_1]
+close_sim

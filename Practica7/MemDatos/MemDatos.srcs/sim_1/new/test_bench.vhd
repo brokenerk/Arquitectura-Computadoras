@@ -1,10 +1,8 @@
-library ieee;
-library STD;
-use ieee.STD_LOGIC_1164.ALL;
-use ieee.STD_LOGIC_arith.all;
-use ieee.STD_LOGIC_unsigned.ALL;
-use ieee.STD_LOGIC_TEXTIO.ALL;
-use STD.TEXTIO.ALL;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use STD.textio.all;
+use IEEE.std_logic_textio.all;
 
 entity test_bench is
 end test_bench;
@@ -16,10 +14,10 @@ architecture Behavioral of test_bench is
                clk, wd : in STD_LOGIC;
                dataOut : out STD_LOGIC_VECTOR (15 downto 0));
     end component;
-    signal add : STD_LOGIC_VECTOR (10 downto 0);
-    signal dataIn : STD_LOGIC_VECTOR (15 downto 0);
+    signal add : STD_LOGIC_VECTOR (10 downto 0) := (others => '0');
+    signal dataIn : STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
     signal clk, wd : STD_LOGIC;
-    signal dataOut : STD_LOGIC_VECTOR (15 downto 0);
+    signal dataOut : STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 begin
     md : MemoriaDatos Port map ( 
         add => add,
@@ -48,7 +46,6 @@ begin
         variable var_data_in : STD_LOGIC_VECTOR (15 downto 0);
         variable cadena : string (1 to 7);
     begin
-
         --- ADD  WD  DATAIN
         file_open(arch_en, "C:\Users\YaKerTaker\Google Drive\8vo\Arquitectura-Computadoras\Practica7\MemDatos\MemDatos.srcs\sim_1\new\Estimulos.txt", READ_MODE);
     
@@ -66,6 +63,7 @@ begin
         
         writeline(arch_res, linea_res);-- escribe la linea en el archivo
         
+        wait for 100 ns;
         for i in 0 to 11 loop
             readline(arch_en, linea_en); -- lee una linea completa
             --- ADD  WD  DATAIN

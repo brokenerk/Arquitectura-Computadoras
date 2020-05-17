@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun Apr  5 21:50:24 2020
+-- Date        : Mon May 11 21:19:19 2020
 -- Host        : OUTERHEAVEN running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -mode funcsim -nolib -force -file {C:/Users/YaKerTaker/Google
 --               Drive/8vo/Arquitectura-Computadoras/Practica7/MemDatos/MemDatos.sim/sim_1/synth/func/xsim/test_bench_func_synth.vhd}
