@@ -10,20 +10,18 @@ end test_bench;
 
 architecture Behavioral of test_bench is
     component Pila_MemPrograma is
-        Port ( PCin : in STD_LOGIC_VECTOR (9 downto 0);
+        Port ( PCin : in STD_LOGIC_VECTOR (15 downto 0);
                clk, clr, wpc, up, dw : in STD_LOGIC;
-               PCout : out STD_LOGIC_VECTOR (9 downto 0);
+               PCout : out STD_LOGIC_VECTOR (15 downto 0);
                SPout : out STD_LOGIC_VECTOR (2 downto 0);
                inst : out STD_LOGIC_VECTOR (24 downto 0));
     end component;
     
-    signal PCin : STD_LOGIC_VECTOR (9 downto 0) := (others => '0');
+    signal PCin : STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
     signal clk, clr, wpc, up, dw : STD_LOGIC;
-    signal PCout : STD_LOGIC_VECTOR (9 downto 0) := (others => '0');
+    signal PCout : STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
     signal SPout : STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
-    
-    signal inst : STD_LOGIC_VECTOR (24 downto 0) := (others => '0');
-    
+    signal inst : STD_LOGIC_VECTOR (24 downto 0) := (others => '0');  
 begin
     stack_mp: Pila_MemPrograma Port map ( 
         PCin => PCin,
@@ -43,8 +41,6 @@ begin
         clk <= '1';
         wait for 5 ns;
     end process;
-    
-    
 
     process
         file arch_res : text;	--Apuntadores tipo txt									
@@ -55,17 +51,13 @@ begin
         
         file arch_en : text; --Apuntadores tipo txt
         variable linea_en: line;
-        variable var_pc_in : STD_LOGIC_VECTOR (9 downto 0);
+        variable var_pc_in : STD_LOGIC_VECTOR (15 downto 0);
         variable var_clr : STD_LOGIC;
         variable var_wpc : STD_LOGIC;
         variable var_up : STD_LOGIC;
         variable var_dw : STD_LOGIC;
         variable cadena : string (1 to 6);
     begin
-        --Hacer clear antes de empezar
---        clr <= '1';
---        wait for 5 ns;
-        
         --- PCIN CLR WPC UP DW
         file_open(arch_en, "C:\Users\YaKerTaker\Google Drive\8vo\Arquitectura-Computadoras\Practica11\Pila_MemPrograma\Pila_MemPrograma.srcs\sim_1\new\Estimulos.txt", READ_MODE);
     
@@ -91,8 +83,7 @@ begin
         
         writeline(arch_res, linea_res);-- escribe la linea en el archivo
         
-        
-        for i in 1 to 19 loop
+        for i in 1 to 20 loop
             readline(arch_en, linea_en); -- lee una linea completa
             --- PCIN CLR WPC UP DW
             
@@ -117,8 +108,9 @@ begin
             dw <= var_dw;
             
             wait until rising_edge(clk); --ESPERA AL FLANCO DE SUBIDA
+            wait for 0.1 ns;
             var_inst := inst;
-            var_pc_out := PCout;
+            var_pc_out := PCout(9 downto 0);
             var_sp_out := SPout;
             
             --- SP PC OPCODE 19..16 15..12 11..8 7..4 3..0 

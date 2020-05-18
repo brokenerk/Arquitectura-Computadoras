@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica11/Pila_MemPrograma/Pila_MemPrograma.srcs/sources_1/new/MemPrograma2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'MemoriaPrograma'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica11/Pila_MemPrograma/Pila_MemPrograma.srcs/sources_1/new/Pila2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Pila'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica11/Pila_MemPrograma/Pila_MemPrograma.srcs/sources_1/new/Pila_MemPrograma.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Pila_MemPrograma'

@@ -66,10 +66,7 @@ begin
         
         writeline(arch_res, linea_res);-- escribe la linea en el archivo
         
-        --clr <= '1';
-        --wait for 10 ns;
-        
-        for i in 1 to 25 loop
+        for i in 1 to 24 loop
             readline(arch_en, linea_en); -- lee una linea completa
             --- PCIN CLR WPC UP DW
             
@@ -93,7 +90,8 @@ begin
             read(linea_en, var_dw);
             dw <= var_dw;
              
-            wait until rising_edge(clk); --ESPERA AL FLANCO DE SUBIDA 
+            wait until rising_edge(clk); --ESPERA AL FLANCO DE SUBIDA
+            wait for 0.1 ns;
             var_pc_out := PCout;
             
             --- SP PC

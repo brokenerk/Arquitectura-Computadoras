@@ -4,8 +4,8 @@ use IEEE.STD_LOGIC_arith.ALL;
 use IEEE.STD_LOGIC_unsigned.ALL;
 
 entity Pila is
-    generic ( m : integer := 10;
-              n : integer := 3);
+    generic ( m : integer := 16; --tam PC
+              n : integer := 3); --tam SP
     Port ( PCin : in STD_LOGIC_VECTOR (m-1 downto 0);
            clk, clr, wpc, up, dw : in STD_LOGIC;
            PCout : out STD_LOGIC_VECTOR (m-1 downto 0);

@@ -4,8 +4,8 @@ use IEEE.STD_LOGIC_arith.ALL;
 use IEEE.STD_LOGIC_unsigned.ALL;
 
 entity MemoriaPrograma is
-    generic ( m : integer := 10;
-              n : integer := 25);
+    generic ( m : integer := 10; --tam PC
+              n : integer := 25); --tam Instruccion
     Port ( pc : in STD_LOGIC_VECTOR (m-1 downto 0);
            inst : out STD_LOGIC_VECTOR (n-1 downto 0));
 end MemoriaPrograma;
@@ -78,14 +78,15 @@ architecture Behavioral of MemoriaPrograma is
     
     type banco is array (0 to (2**m)-1) of STD_LOGIC_VECTOR(n-1 downto 0);
     constant aux : banco := (
+        "0000000000000000000000000",
         LI & R6 & x"0057",                  --LI    R6, #87
         LI & R8 & x"005a",                  --LI    R8, #90
         tipoR & R8 & R2 & R3 & SU & ADD,    --ADD   R8, R2, R3
         tipoR & R1 & R2 & R3 & SU & SUB,    --SUB   R1, R2, R3
-        CALL & SU & x"0008",                --CALL  0x09 -- restar 1
+        CALL & SU & x"0009",                --CALL  0x09
         LI & R6 & x"0057",                  --LI    R6, #87
         LI & R8 & x"005a",                  --LI    R8, #90
-        CALL & SU & x"000c",                --CALL  13 -- restar 1
+        CALL & SU & x"000D",                --CALL  13
         tipoR & R8 & R2 & R3 & SU & ADD,    --ADD   R8, R2, R3
         tipoR & R1 & R2 & R3 & SU & SUB,    --SUB   R1, R2, R3
         LI & R6 & x"0057",                  --LI    R6, #87
@@ -93,10 +94,10 @@ architecture Behavioral of MemoriaPrograma is
         tipoR & R1 & R2 & R3 & SU & SUB,    --SUB   R1, R2, R3
         LI & R6 & x"0057",                  --LI    R6, #87
         RET & SU & SU & SU & SU & SU,       --RET
-        B & SU & x"0011",                   --B 18
+        B & SU & x"0012",                   --B 18
         NOP & SU & SU & SU & SU & SU,       --NOP
         NOP & SU & SU & SU & SU & SU,       --NOP
-        B & SU & x"0010",                   --B 17
+        B & SU & x"0011",                   --B 17
         others => (others => '0')
     );
 begin
