@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CartasASM.srcs/sources_1/new/Multiplexor.vhd" \
+"../../../../CartasASM.srcs/sim_1/new/tbMultiplexor.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tbCartasASM_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tbCartasASM" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="86700001fs"></ZoomEndTime>
+      <Cursor1Time time="4000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="101"></NameColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/tbCartasASM/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbCartasASM/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbCartasASM/ini" type="logic">
+      <obj_property name="ElementShortName">ini</obj_property>
+      <obj_property name="ObjectShortName">ini</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbCartasASM/D" type="array">
+      <obj_property name="ElementShortName">D[8:0]</obj_property>
+      <obj_property name="ObjectShortName">D[8:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbCartasASM/Dout" type="array">
+      <obj_property name="ElementShortName">Dout[8:0]</obj_property>
+      <obj_property name="ObjectShortName">Dout[8:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbCartasASM/display" type="array">
+      <obj_property name="ElementShortName">display[6:0]</obj_property>
+      <obj_property name="ObjectShortName">display[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbCartasASM/num" type="array">
+      <obj_property name="ElementShortName">num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num[3:0]</obj_property>
+   </wvobject>
+</wave_config>
