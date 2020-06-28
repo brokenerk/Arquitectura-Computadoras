@@ -1,0 +1,30 @@
+--- P6.- ARCHIVO DE REGISTROS --
+m x n
+m: numero de palabras = 4 -> tam Rd, Rt, Rs
+n: tamaño de la palabra = 16 LI -> Rd = Slit16 -- ALU
+
+-- Entradas
+readReg1 (4) ---> m
+readReg2 (4) ---> m
+writeReg (4) ---> m
+shamt (4) ---> m
+writeData (16) ---> n
+WR
+DIR
+SHE
+clk
+clr
+
+-- Salidas
+readData1 (16) ---> n
+readData2 (16) ---> n
+
+-- Tabla de control
+clr		clk 		WR 	SHE 	DIR 	Operacion
+1		X 			X 	X 		X 		archivo(0, 1, ..., 15) = 0, reset
+0		RisingEdge	1	0		X 		archivo(writeReg) = writeData
+0		RisingEdge	1	1		0		archivo(writeReg) = archivo(readReg1) >> shamt
+0		RisingEdge	1	1		1		archivo(writeReg) = archivo(readReg1) << shamt
+0		RisingEdge	0	X 		X 		archivo = archivo
+X 		X 			X 	X 		X 		readData1 = archivo(readReg1)
+										readData2 = archivo(readReg2)

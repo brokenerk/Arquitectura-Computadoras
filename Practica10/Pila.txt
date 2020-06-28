@@ -1,22 +1,26 @@
-PILA
-Stack Pointer = SP
-8 x 16
+--- P10.- PILA --
+Stack Pointer = SP = 8
 
-Entradas:
-PCin 16 bits
+m x n
+m: numero de palabras = 2^16 B -> PC = lit16
+n: tam SP = 8
+
+-- Entrada
+PCin (16) ---> m
 WPC
 UP
 DW
 CLR
 CLK
 
-Salidas:
-PCout 16 bits
+-- Salida
+PCout (16) ---> m
 
 Saltos condicionales e incondicionales
 Llamada subrutinas
 Retorno
 
+-- Tabla de control
 CLR	CLK	WPC	UP	DW	Operacion
 1	x	x 	x 	x 	SP = 0
 					PILA(0,1,...,7) = 0

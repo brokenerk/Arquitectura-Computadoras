@@ -1,0 +1,26 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6d40745c23764a8989c3348b976af905 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_bench_behav xil_defaultlib.test_bench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.UnidadC [unidadc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Condicion [condicion_default]
+Compiling architecture behavioral of entity xil_defaultlib.DecodificadorInstruccion [decodificadorinstruccion_default]
+Compiling architecture behavioral of entity xil_defaultlib.MfunCode [mfuncode_default]
+Compiling architecture behavioral of entity xil_defaultlib.MopCode [mopcode_default]
+Compiling architecture behavorial of entity xil_defaultlib.Mux2C [mux2c_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexor [multiplexor_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nivel [nivel_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registro [registro_default]
+Compiling architecture behavioral of entity xil_defaultlib.UnidadControl [unidadcontrol_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_bench
+Built simulation snapshot test_bench_behav

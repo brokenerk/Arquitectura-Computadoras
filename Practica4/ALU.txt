@@ -1,0 +1,15 @@
+--- P4.- ALU --
+
+-- Tabla de control
+ALUOP(3)	ALUOP(2)	ALUOP(1)	ALUOP(0)	Operacion
+0			0			0			0			AND
+0			0			0			1			OR
+0			0			1			0			XOR
+1			1			0			1			NAND
+1			1			0			0			NOR
+0			1			1			0			XNOR ¬a xor b
+1			0			1			0			XNOR  a xor ¬b
+1			1			0			1			NOT (NAND)
+1			1			0			0			NOT (NOR)
+0			0			1			1			SUMA
+0			1			1			1			RESTA

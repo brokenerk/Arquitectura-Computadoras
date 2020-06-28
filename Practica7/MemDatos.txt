@@ -1,0 +1,23 @@
+--- P7.- MEMORIA DE DATOS --
+m x n
+m: numero de palabras = 2^16 LWI -> Rd = Mem[lit16]
+n: tamaño de la palabra = 16 LI -> Rd = Slit16 --- ALU
+
+-- Entradas
+dir (16) --> m
+dataIn (16) --> n
+clk
+WD
+
+-- Salidas
+dataOut (16) --> n
+
+La suma la hace la ALU
+Escritura sincrona
+Lectura asincrona
+RAM
+
+-- Tabla de control
+clk				WD		Operacion
+RisingEdge		1		Escritura: MemData[dir] = dataIn
+X 				X 		Lectura: dataOut = MemData[dir]
