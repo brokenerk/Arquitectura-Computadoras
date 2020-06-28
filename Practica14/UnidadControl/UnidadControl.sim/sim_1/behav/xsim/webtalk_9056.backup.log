@@ -2,13 +2,13 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jun 24 20:37:07 2020
-# Process ID: 1040
+# Start of session at: Sun Jun 28 14:31:18 2020
+# Process ID: 9056
 # Current directory: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.sim/sim_1/behav/xsim/xsim.dir/tbMopCode_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.sim/sim_1/behav/xsim/xsim.dir/tbNivel_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/YaKerTaker/Google -notrace
 couldn't read file "C:/Users/YaKerTaker/Google": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Wed Jun 24 20:37:07 2020...
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 28 14:31:18 2020...

@@ -12,6 +12,7 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
 Compiling architecture behavioral of entity xil_defaultlib.UnidadC [unidadc_default]
 Compiling architecture behavioral of entity xil_defaultlib.Condicion [condicion_default]
 Compiling architecture behavioral of entity xil_defaultlib.DecodificadorInstruccion [decodificadorinstruccion_default]

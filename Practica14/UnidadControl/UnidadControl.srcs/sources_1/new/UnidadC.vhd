@@ -7,7 +7,7 @@ entity UnidadC is
 end UnidadC;
 
 architecture Behavioral of UnidadC is
-	type estados is (e0);
+    type estados is (e0);
 	signal actual, siguiente : estados;
 begin
 	--Control de estados
@@ -19,7 +19,7 @@ begin
 			actual <= siguiente;
 		end if;
 	end process;
-	
+
 	--Carta ASM
 	process(actual, EQ, NE, LT, LE, GT, GE, nivel, BGETI, BGTI, BLETI, BLTI, BNEQI, BEQI, TIPOR)
 	begin

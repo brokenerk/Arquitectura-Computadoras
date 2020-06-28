@@ -1,6 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.srcs/sources_1/new/MopCode.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'MopCode'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.srcs/sources_1/new/UnidadControl.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'UnidadControl'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Practica14/UnidadControl/UnidadControl.srcs/sim_1/new/test_bench.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'test_bench'
