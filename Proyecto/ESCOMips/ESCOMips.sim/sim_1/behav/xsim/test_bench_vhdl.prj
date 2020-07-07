@@ -1,0 +1,33 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ESCOMips.srcs/sources_1/new/ALU1Bit.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/ALUNBits.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/ArchivoRegistros.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/BarrelShifter.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Condicion.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/DecodificadorInstruccion.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Demultiplexor.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/ESCOMips.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/ExtensorDireccion.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/ExtensorSigno.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/MemoriaDatos.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/MemoriaPrograma2.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/MfunCode.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/MopCode.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Multiplexor.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/MultiplexorUC.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Mux16Bits.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Mux2C.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Mux2CUC.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/MuxSR2.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Nivel.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Pila.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/Registro.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/RegistroBanderas.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/UnidadC.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/UnidadControl.vhd" \
+"../../../../ESCOMips.srcs/sources_1/new/sum1bit.vhd" \
+"../../../../ESCOMips.srcs/sim_1/new/test_bench.vhd" \
+
+# Do not sort compile order
+nosort

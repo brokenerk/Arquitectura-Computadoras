@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul  2 23:22:40 2020
+# Process ID: 8456
+# Current directory: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Proyecto/Burbuja
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6624 C:\Users\YaKerTaker\Google Drive\8vo\Arquitectura-Computadoras\Proyecto\Burbuja\Burbuja.xpr
+# Log file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Proyecto/Burbuja/vivado.log
+# Journal file: C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Proyecto/Burbuja\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Proyecto/Burbuja/Burbuja.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source test_bench.tcl
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+set_property -name {xsim.simulate.runtime} -value {15100ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+run 1000 ns
+run 1000 ns
+set_property -name {xsim.simulate.runtime} -value {16200ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+save_wave_config {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Proyecto/Burbuja/test_bench_behav.wcfg}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test_bench.tcl
+save_wave_config {C:/Users/YaKerTaker/Google Drive/8vo/Arquitectura-Computadoras/Proyecto/Burbuja/test_bench_behav1.wcfg}
+close_sim
